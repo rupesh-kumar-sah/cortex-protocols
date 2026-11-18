@@ -7,15 +7,15 @@
     "cortex-admin": "src/cli/cortex-admin.js"
   },
   "scripts": {
-    "dev": "node init && nodemon src/index.js",
-    "start": "node init && node src/index.js",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
     "admin": "node src/cli/cortex-admin.js",
     "simulate": "node src/simulation/run-simulation.js",
     "simulate:smoke": "node src/simulation/run-simulation.js --smoke --mock",
     "lint": "eslint src/",
     "test": "jest --forceExit",
     "backtest:fraud": "jest src/__tests__/fraud --forceExit",
-    "build": "node init && node scripts/generate-openapi.js"
+    "build": "node scripts/generate-openapi.js"
   },
   "dependencies": {
     "@stellar/stellar-sdk": "^13.1.0",
